@@ -1,0 +1,116 @@
+// main: ../style.less
+
+.intro {
+    width: 100%;
+    height: 100vh;
+    background-color: @black;
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+}
+
+.intro__logo {
+    width: 100%;
+    max-width: 296.45px;
+    height: 162.72px;
+    overflow: hidden;
+
+    margin: 0 auto;
+}
+
+.intro__logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.intro__btn {
+    width: 45px;
+    height: 45px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px 0 0 0;
+    border: 1px solid #4F575B;
+
+    position: absolute;
+    bottom: 55.5px;
+    left: 48%;
+
+    transition: border .1s linear;
+
+    &:hover {
+        border: 1px solid @white;
+    }
+
+    & a {
+        padding: 5px 5px 5px 5px;
+    }
+}
+
+/* Media
+============================================*/
+
+@media(max-width: 800px) {
+    .intro__logo {
+        max-width: 266.45px;
+        height: 132.72px;
+    }
+}
+
+@media(max-width: 414px) {
+
+    .intro__logo {
+        max-width: 193px;
+        height: 105.94px;
+    }
+
+    .intro__btn {
+        left: 44%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

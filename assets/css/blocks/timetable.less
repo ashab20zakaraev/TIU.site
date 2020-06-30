@@ -1,0 +1,100 @@
+// main: ../style.less
+
+.timetable {
+    width: 100%;
+    padding: 44px 0 65px 0;
+}
+
+.timetable__inner {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.timetable__item {
+    flex: 0 1 33.33333%;
+
+    .timetable__title {
+        font-family: @fedra;
+        font-weight: 400;
+        font-size: 24px;
+        color: @gray_black;
+
+        margin: 0 0 30px 0;
+    }
+
+    .timetable__btn {
+        height: 38px;
+    }
+
+    .timetable__btn a {
+        font-family: @fedra;
+        font-weight: 300;
+        font-size: 24px;
+        color: @white_gray;
+        text-decoration: none;
+
+        border: 1px solid @white_gray;
+        padding: 7px 20px;
+
+        transition: background-color .2s linear, color .2s linear;
+    }
+
+    .timetable__btn a:hover {
+        background-color: @white_gray;
+        color: @white;
+    }
+
+    .timetable__btn--discover a {
+        padding: 7px 50.5px;
+    }
+
+    .timetable__btn--visit a {
+        padding: 7px 36.5px;
+    }
+}
+
+/* Media
+============================================*/
+
+@media (max-width: 790px) {
+    .timetable {
+        padding: 33px 0 0 0;
+    }
+
+    .timetable__inner {
+        margin: 0 0 50px 0;
+    }
+
+    .timetable__item {
+        flex: 0 1 100%;
+        margin: 0 0 33px 0;
+
+        &:last-child {
+            margin: 0 0 0 0;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .timetable__inner {
+        margin: 0 0 41.4px 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,72 @@
+// main: ../style.less
+
+.hours {
+    width: 100%;
+    padding: 0 0 53.7px 0;
+}
+
+.hours__title {
+    font-family: @fedra;
+    font-weight: 350;
+    font-size: 24px;
+    color: @white_blue;
+
+    margin: 60.3px 0 0 0;
+}
+
+.hours__inner {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hours__item {
+    flex: 0 1 33.33333%;
+    margin: 26.4px 0 0 0;
+
+    .hours__info {
+        font-weight: 350;
+    }
+}
+
+/* Media
+============================================*/
+
+@media (max-width: 650px) {
+    .hours__item {
+        flex: 0 1 100%;
+         margin: 0 0 40px 0;
+
+        &:first-child {
+            margin: 26.4px 0 40px 0;
+        }
+
+        &:last-child {
+            margin: 0 0 0 0;
+        }
+    }
+
+    .hours__title {
+        margin: 66px 0 0 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,86 @@
+// main: ../style.less
+
+.footer {
+    width: 100%;
+    height: 50px;
+    background-color: @blue;
+}
+
+.footer__inner {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+    .footer__link {
+        text-decoration: none;
+        color: @white;
+        font-size: 24px;
+        margin: 10px 90px 0 0;
+
+        transition: color .1s linear;
+
+        &:last-child {
+            margin: 10px 0 0 0;
+        }
+
+        &:hover {
+            color: @white_blue;
+        }
+    }
+
+}
+
+
+/* Media
+============================================*/
+
+@media (max-width: 400px) {
+    .footer__inner {
+        .footer__link {
+            margin: 10px 70px 0 0;
+        }
+    }
+}
+
+@media (max-width: 330px) {
+    .footer__inner {
+        .footer__link {
+            margin: 10px 60px 0 0;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

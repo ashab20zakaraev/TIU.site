@@ -1,0 +1,154 @@
+// main: ../style.less
+
+.contact {
+    width: 100%;
+    height: 330px;
+
+    position: relative;
+    z-index: 10;
+
+    padding: 67px 0 0 0;
+
+    &:after {
+        content: "";
+        display: block;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+
+        width: 88.5%;
+        height: 330px;
+        background-color: @color_phon;
+    }
+}
+
+.contact__inner {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact__title {
+    font-family: @fedra;
+    font-weight: 350;
+    font-size: 36px;
+    color: @blue;
+    margin: 0 0 119px 0;
+}
+
+.contact__text {
+    font-family: @fedra;
+    font-weight: 350;
+    font-size: 14px;
+    color: @gray_black;
+}
+
+.contact__map {
+    width: 100%;
+    max-width: 881.02px;
+    height: 340px;
+    overflow: hidden;
+
+    position: absolute;
+    right: 0;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+/* Media
+============================================*/
+
+@media (max-width: 1150px) {
+    .contact {
+        padding: 0 0 0 0;
+        height: 520px;
+
+        &:after {
+            width: 100%;
+            height: 197px;
+        }
+
+        .container {
+            max-width: 1030px;
+            padding: 0 0 0 0;
+        }
+    }
+
+    .contact__info, .contact__map {
+        flex: 0 1 100%;
+    }
+
+    .contact__info {
+        padding: 0 15px;
+    }
+
+    .contact__map {
+        position: static;
+        margin: 30px auto 0 auto;
+    }
+
+    .contact__title {
+        margin: 0 0 50px 0;
+    }
+}
+
+@media (max-width: 650px) {
+    .contact {
+        &:after {
+            height: 229px;
+        }
+    }
+
+    .contact__info {
+        padding: 32px 0 0 15px;
+    }
+
+    .contact__title {
+        font-size: 33px;
+        margin: 10px 0 40px 0;
+    }
+
+    .contact__map  {
+        margin: 33px auto 0 auto;
+    }
+}
+
+@media (max-width: 550px) {
+    .contact__title {
+        font-size: 30px;
+        margin: 10px 0 35px 0;
+    }
+}
+
+@media (max-width: 450px) {
+    .contact__title {
+        font-size: 27px;
+        margin: 10px 0 30px 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

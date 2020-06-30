@@ -1,0 +1,123 @@
+// main: ../style.less
+
+.titlePage {
+    width: 100%;
+    padding: 120px 0 0 0;
+    position: relative;
+    z-index: 10;
+
+}
+
+.page__title {
+    font-family: @fedra;
+    font-weight: 400;
+    font-size: 48px;
+    color: @blue;
+}
+
+.page__subtitle {
+    font-family: @fedra;
+    font-weight: 500;
+    font-size: 24px;
+    color: @gray;
+
+    margin: 25px 0 0 0;
+}
+
+.page__block {
+    width: 100%;
+    max-width: 897px;
+    height: 262.44px;
+    background-color: @color_phon;
+
+    position: absolute;
+    top: 60px;
+    right: 0;
+    z-index: -1;
+}
+
+/* Media
+============================================*/
+
+@media (max-width: 1000px) {
+    .page__block {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 900px) {
+    .page__title {
+        font-size: 46px;
+    }
+
+    .page__subtitle {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 720px) {
+    .titlePage {
+        padding: 35px 0 0 0;
+    }
+
+    .page__title {
+        font-size: 42px;
+    }
+
+    .page__subtitle {
+        font-size: 21px;
+    }
+
+    .page__block {
+        top: 0;
+    }
+}
+
+@media (max-width: 660px) {
+    .titlePage {
+        padding: 24px 0 0 0;
+    }
+
+    .page__title {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 560px) {
+    .page__title {
+        font-size: 38px;
+    }
+}
+
+@media (max-width: 470px) {
+    .page__title {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 387px) {
+    .page__title {
+        font-size: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
